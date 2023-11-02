@@ -19,12 +19,13 @@ public class Dbinit implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         this.productRepository.deleteAll();
-        Product product1 = new Product("khanh","86 (the band) - True Life Songs and Pictures",14.95);
-        Product product2 = new Product("pf01","Paddlefoot - The first CD",12.95);
-        Product product3 = new Product("pf02","Paddlefoot - The Paddlefoot - The first CDsecond CD",14.95);
-        Product product4 = new Product("jr01","Joe Rut - Genuine Wood Grained Finish",14.95);
+        Product product1 = new Product("khanh", "86 (the band) - True Life Songs and Pictures", 14.95);
+        Product product2 = new Product("pf01", "Paddlefoot - The first CD", 12.95);
+        Product product3 = new Product("pf02", "Paddlefoot - The second CD", 14.95);
+        Product product4 = new Product("jr01", "Joe Rut - Genuine Wood Grained Finish", 14.95);
         List<Product> products = Arrays.asList(product1, product2, product3);
         productRepository.saveAll(products);
-    // hello
+        // hello world
     }
+    
 }
